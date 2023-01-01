@@ -1,0 +1,64 @@
+#editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 45%;
+    min-width: 300px;
+    max-width: 800px;
+    height: 95%;
+    
+    padding: 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    
+    background-color: #232946;
+}
+
+.editor-title {
+    margin: 0;
+    color: #232946;
+}
+
+.editor-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+}
+
+.editor-wrapper label {
+    color: #232946;
+}
+
+.editor-wrapper input[type=text] {
+    color :#232946;
+}
+
+.editor-card {
+    background-color: #fffffe;
+    padding: 10px;
+    border-radius: 6px;
+    
+    box-sizing: border-box;
+}
+
+#editor-info {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    max-width: 100%;
+    
+    gap: 10px;
+    
+}
+
+#editor-info textarea {
+    max-width: calc(100% - 5px);
+    max-height: 200px;
+}
+
+#editor-info label {
+    font-weight: 500;
+}

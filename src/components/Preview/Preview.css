@@ -1,0 +1,99 @@
+#preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 4px 4px 10px grey;
+    
+    width: 30%;
+    height: 80%;
+    
+    background-color: #fffffe;
+    color: #fffffe;
+}
+
+#preview-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 30%;
+    min-width: 200px;
+    height: 100%;
+    padding: 20px;
+    
+    background-color: #232946;
+    box-sizing: border-box;
+    
+    font-size: 12px;
+}
+
+#preview-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    box-sizing: border-box;
+    
+    width: 70%;
+    min-width: 500px;
+    height: 100%;
+    padding: 20px;
+}
+
+#profile-picture {
+    height: auto;
+    min-width: 32px;
+}
+
+#preview-contact {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    gap: 10px;
+}
+
+.preview-title {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.preview-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    width: 90%;
+}
+
+.preview-details-wrapper {
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    gap: 10px;
+}
+
+.preview-details-wrapper img {
+    grid-row: 1 / 3;
+    height: auto;
+    max-width: 24px;
+    align-self: center;
+}
+
+.preview-details-wrapper span {
+    margin: 0px;
+    padding: 0px;
+}
+
+.preview-details {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+}
