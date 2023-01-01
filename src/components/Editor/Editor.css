@@ -8,11 +8,23 @@
     max-width: 800px;
     height: 95%;
     
+    gap: 10px;
+    
     padding: 10px;
     border-radius: 6px;
     box-sizing: border-box;
     
     background-color: #232946;
+}
+
+#editor textarea {
+    max-width: calc(100% - 5px);
+    max-height: 10em;
+    min-height: 4em;
+}
+
+#editor label {
+    font-weight: 500;
 }
 
 .editor-title {
@@ -40,25 +52,9 @@
     padding: 10px;
     border-radius: 6px;
     
-    box-sizing: border-box;
-}
-
-#editor-info {
-    display: flex;
-    flex-direction: column;
-    
     width: 100%;
-    max-width: 100%;
     
     gap: 10px;
     
-}
-
-#editor-info textarea {
-    max-width: calc(100% - 5px);
-    max-height: 200px;
-}
-
-#editor-info label {
-    font-weight: 500;
+    box-sizing: border-box;
 }

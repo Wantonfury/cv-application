@@ -10,12 +10,10 @@ class Editor extends React.Component {
     render() {
         return (
             <div id="editor">
-                <div id="editor-info">
-                    <PersonalInfo />
-                    <Experience />
-                    <Education />
-                    <Skills />
-                </div>
+                <PersonalInfo />
+                <Experience />
+                <Education />
+                <Skills />
             </div>
         );
     }
