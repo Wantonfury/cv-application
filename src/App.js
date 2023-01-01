@@ -1,13 +1,13 @@
 import './css/App.css';
-import Preview from './components/Preview';
-import Editor from './components/Editor';
+import Header from './components/Header.js';
+import Content from './components/Content';
 
 function App() {
   return (
-    <div id="app">
-      <Editor />
-      <Preview />
-    </div>
+    <>
+      <Header />
+      <Content />
+    </>
   );
 }
 

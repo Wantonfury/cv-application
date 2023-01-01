@@ -1,0 +1,10 @@
+#editor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 45%;
+    height: 95%;
+    
+    background-color: #fffffe;
+}
