@@ -1,8 +1,13 @@
 import './css/App.css';
+import Preview from './components/Preview';
+import Editor from './components/Editor';
 
 function App() {
   return (
-    <div><span>Hello world!</span></div>
+    <div id="app">
+      <Editor />
+      <Preview />
+    </div>
   );
 }
 
