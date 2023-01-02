@@ -7,30 +7,30 @@ class Contact extends React.Component {
     render() {
         return (
             <div id="preview-contact">
-                <span className="preview-title">Contact</span>
+                <span className="preview-card-title">CONTACT</span>
                 
-                <div className="preview-wrapper">
-                    <div className="preview-details-wrapper">
+                <div className="preview-card">
+                    <div className="preview-card-slide">
                         <img src={PhoneIcon} />
-                        <div className="preview-details">
+                        <div className="preview-card-slide-vertical">
                             <span>Phone</span>
-                            <span id="preview-contact-phone">07754209123</span>
+                            <span id="preview-contact-phone" className="preview-text">{this.props.data["info-phone"]}</span>
                         </div>
                     </div>
                     
-                    <div className="preview-details-wrapper">
+                    <div className="preview-card-slide">
                         <img src={MailIcon} />
-                        <div className="preview-details">
+                        <div className="preview-card-slide-vertical">
                             <span>Mail</span>
-                            <span id="preview-contact-mail">person@provider.com</span>
+                            <span id="preview-contact-mail" className="preview-text">{this.props.data['info-mail']}</span>
                         </div>
                     </div>
                     
-                    <div className="preview-details-wrapper">
+                    <div className="preview-card-slide">
                         <img src={WebIcon} />
-                        <div className="preview-details">
+                        <div className="preview-card-slide-vertical">
                             <span>Web</span>
-                            <span id="preview-contact-web">www.github.com/person</span>
+                            <span id="preview-contact-web" className="preview-text">{this.props.data['info-web']}</span>
                         </div>
                     </div>
                 </div>

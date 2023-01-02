@@ -9,20 +9,23 @@ import Education from './Education.js';
 
 
 class Preview extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     
     render() {
         return (
             <div id="preview">
                 <div id="preview-left">
-                    <Profile />
-                    <Contact />
-                    <Skills />
+                    <Profile data={this.props.data} />
+                    <Contact data={this.props.data} />
+                    <Skills data={this.props.data} />
                 </div>
                 
                 <div id="preview-right">
-                    <Details />
-                    <Experience />
-                    <Education />
+                    <Details data={this.props.data} />
+                    <Experience data={this.props.data} />
+                    <Education data={this.props.data} />
                 </div>
             </div>
         );
