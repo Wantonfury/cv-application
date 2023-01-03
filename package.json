@@ -38,7 +38,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "uniqid": "^5.4.0"
   },
   "homepage": "http://wantonfury.github.io/cv-application"
 }
