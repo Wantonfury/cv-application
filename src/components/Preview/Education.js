@@ -4,14 +4,14 @@ import uniqid from "uniqid";
 class Education extends React.Component {
     renderEducation(education) {
         return (
-            <li key={uniqid()} className="preview-experience-wrapper">
-                <span className="preview-experience-dates">
+            <li key={uniqid()} className="preview-wrapper">
+                <span className="preview-dates">
                     {education.get("education-date-from")} - {education.get("education-date-to")}
                 </span>
                 
-                <div className="preview-experience-info">
+                <div className="preview-info">
                     <span style={{fontWeight: 700}}>{education.get("education-school")}</span>
-                    <span className="preview-experience-description">{education.get("education-description")}</span>
+                    <span className="preview-category-description">{education.get("education-description")}</span>
                 </div>
             </li>
         );
@@ -22,9 +22,9 @@ class Education extends React.Component {
         
         if (!education) return;
         return (
-            <div className="preview-experience">
+            <div className="preview-category">
                 <h4 className="preview-title">EDUCATION</h4>
-                <ul className="preview-experience-list">
+                <ul className="preview-list">
                     {[...education.values()].map((value) => {
                         return this.renderEducation(value);
                     })}

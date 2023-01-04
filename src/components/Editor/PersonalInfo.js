@@ -42,6 +42,11 @@ class PersonalInfo extends React.Component {
                 </div>
                 
                 <div className="editor-wrapper">
+                    <label htmlFor="info-pfp">Profile Picture:</label>
+                    <input type="file" id="info-pfp" accept="image/*" onChange={(e) => this.props.onValueChange('info-pfp', e.target.files[0])} />
+                </div>
+                
+                <div className="editor-wrapper">
                     <label htmlFor="info-description">Description:</label>
                     <textarea id="info-description" rows="5" onInput={this.onValueChange} />
                 </div>

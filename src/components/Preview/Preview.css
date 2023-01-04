@@ -52,7 +52,11 @@
 
 #profile-picture {
     height: auto;
-    min-width: 32px;
+    min-width: 200px;
+    height: 200px;
+    max-width: 200px;
+    
+    border-radius: 50%;
 }
 
 #preview-contact {
@@ -130,13 +134,13 @@
     max-width: 80% !important;
 }
 
-.preview-experience {
+.preview-category {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.preview-experience-list {
+.preview-list {
     display: flex;
     flex-direction: column;
     
@@ -148,7 +152,7 @@
     padding: 0;
 }
 
-.preview-experience-dates {
+.preview-dates {
     display: flex;
     color: black;
     
@@ -157,7 +161,7 @@
     width: 35%;
 }
 
-.preview-experience-wrapper {
+.preview-wrapper {
     display: flex;
     align-items: center;
     width: 100%;
@@ -165,14 +169,14 @@
     gap: 20px;
 }
 
-.preview-experience-info {
+.preview-info {
     display: flex;
     flex-direction: column;
     
     width: 65%;
 }
 
-.preview-experience-description {
+.preview-category-description {
     width: 100%;
     overflow-wrap: break-word;
 }
