@@ -26,4 +26,8 @@ body {
 
 :root {
   --header-height: 80px;
+  --button-background: #eebbc3;
+  --button-background-hover: #e4b1b9;
+  --button-background-active: #daa7af;
+  --button-color: #232946;
 }

@@ -58,3 +58,23 @@
     
     box-sizing: border-box;
 }
+
+.editor-add-experience {
+    margin-left: auto;
+    width: 150px;
+    height: 40px;
+    
+    background-color: var(--button-background);
+    color: var(--button-color);
+    
+    transition: background-color .2s;
+    cursor: pointer
+}
+
+.editor-add-experience:hover {
+    background-color: var(--button-background-hover);
+}
+
+.editor-add-experience:active {
+    background-color: var(--button-background-active);
+}
