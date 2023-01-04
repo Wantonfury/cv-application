@@ -6,5 +6,4 @@
 
 ## Built with:
 - HTML, CSS, JavaScript
-- Webpack
 - ReactJS
