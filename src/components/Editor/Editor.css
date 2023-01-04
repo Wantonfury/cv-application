@@ -7,6 +7,7 @@
     width: 40%;
     max-width: 800px;
     height: 95%;
+    height: auto;
     
     gap: 10px;
     
@@ -59,10 +60,22 @@
     box-sizing: border-box;
 }
 
-.editor-add-experience {
-    margin-left: auto;
-    width: 150px;
-    height: 40px;
+.editor-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editor-button {
+    
+    width: 120px;
+    min-width: 120px;
+    
+    height: 30px;
+    min-height: 30px;
+    
+    border-radius: 8px;
+    font-weight: 700;
     
     background-color: var(--button-background);
     color: var(--button-color);
@@ -71,10 +84,10 @@
     cursor: pointer
 }
 
-.editor-add-experience:hover {
+.editor-button:hover {
     background-color: var(--button-background-hover);
 }
 
-.editor-add-experience:active {
+.editor-button:active {
     background-color: var(--button-background-active);
 }

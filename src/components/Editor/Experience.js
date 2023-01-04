@@ -5,21 +5,23 @@ class Experience extends React.Component {
     constructor(props) {
         super(props);
         
-        this.exp = {};
-        this.uniqueID = uniqid();
+        this.exp = new Map();
         
         this.onExperienceChange = this.onExperienceChange.bind(this);
     }
     
     onExperienceChange(e) {
-        this.exp[e.currentTarget.id] = e.currentTarget.value;
-        this.props.onValueChange(e.currentTarget.parentElement.parentElement.id, this.exp);
+        this.exp.set(e.currentTarget.id, e.currentTarget.value);
+        this.props.onValueChange(this.props.expKey, this.exp);
     }
     
     render() {
         return (
-            <div id={this.uniqueID} className="editor-card">
-                <h2 className="editor-title">Experience</h2>
+            <div className="editor-card">
+                <div className="editor-title-wrapper">
+                    <h2 className="editor-title">Experience</h2>
+                    <button className="editor-button" onClick={(e) => this.props.deleteExperience(this.props.expKey)}>Delete</button>
+                </div>
                 
                 <div className="editor-wrapper">
                     <label htmlFor="experience-title">Title:</label>

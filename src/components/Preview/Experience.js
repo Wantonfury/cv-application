@@ -6,12 +6,12 @@ class Experience extends React.Component {
         return (
             <li key={uniqid()} className="preview-experience-wrapper">
                 <span className="preview-experience-dates">
-                    {exp["experience-date-from"]} - {exp["experience-date-to"]}
+                    {exp.get("experience-date-from")} - {exp.get("experience-date-to")}
                 </span>
                 
                 <div className="preview-experience-info">
-                    <span style={{fontWeight: 700}}>{exp["experience-company"]} | {exp["experience-title"]}</span>
-                    <span className="preview-experience-description">{exp["experience-description"]}</span>
+                    <span style={{fontWeight: 700}}>{exp.get("experience-company")} | {exp.get("experience-title")}</span>
+                    <span className="preview-experience-description">{exp.get("experience-description")}</span>
                 </div>
             </li>
         );
