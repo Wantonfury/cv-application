@@ -10,7 +10,7 @@
     height: 1000px;
     
     background-color: #fffffe;
-    color: #fffffe;
+    color: #232946;
 }
 
 #preview-left {
@@ -83,7 +83,6 @@
     width: 100%;
     
     font-size: 24px;
-    text-decoration: underline;
 }
 
 .preview-card-slide {
@@ -103,8 +102,15 @@
     font-size: 40px;
 }
 
+.preview-title {
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 1px solid #232946;
+}
+
 .preview-description {
     border-bottom: 1px solid #232946;
+    text-decoration: none !important;
 }
 
 .preview-name span:first-of-type {
@@ -122,6 +128,50 @@
 #preview-contact .preview-text {
     color: #fffffe;
     max-width: 80% !important;
+}
+
+.preview-experience {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.preview-experience-list {
+    display: flex;
+    width: 100%;
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.preview-experience-dates {
+    display: flex;
+    color: black;
+    
+    font-size: 14px;
+    font-weight: 600;
+    width: 35%;
+}
+
+.preview-experience-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    gap: 20px;
+}
+
+.preview-experience-info {
+    display: flex;
+    flex-direction: column;
+    
+    width: 65%;
+}
+
+.preview-experience-description {
+    width: 100%;
+    overflow-wrap: break-word;
 }
 
 #skills {

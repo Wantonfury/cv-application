@@ -9,7 +9,7 @@ class Editor extends React.Component {
     constructor(props) {
         super(props);
         
-        this.exp = {};
+        this.exp = new Map();
         this.onValueChange = this.onValueChange.bind(this);
         this.onExperienceChange = this.onExperienceChange.bind(this);
     }
@@ -19,7 +19,7 @@ class Editor extends React.Component {
     }
     
     onExperienceChange(id, value) {
-        this.exp[id] = value;
+        this.exp.set(id, value);
         this.onValueChange('exp', this.exp);
     }
     

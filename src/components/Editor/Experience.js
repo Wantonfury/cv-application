@@ -32,6 +32,11 @@ class Experience extends React.Component {
                 </div>
                 
                 <div className="editor-wrapper">
+                    <label htmlFor="experience-description">Description:</label>
+                    <textarea id="experience-description" onInput={this.onExperienceChange} />
+                </div>
+                
+                <div className="editor-wrapper">
                     <label htmlFor="experience-date-from">From:</label>
                     <input type="date" id="experience-date-from" onInput={this.onExperienceChange} />
                 </div>
