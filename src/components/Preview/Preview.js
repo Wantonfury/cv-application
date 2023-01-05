@@ -8,28 +8,22 @@ import Experience from './Experience.js';
 import Education from './Education.js';
 
 
-class Preview extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    
-    render() {
-        return (
-            <div id="preview">
-                <div id="preview-left">
-                    <Profile data={this.props.data} />
-                    <Contact data={this.props.data} />
-                    <Skills data={this.props.data} />
-                </div>
-                
-                <div id="preview-right">
-                    <Details data={this.props.data} />
-                    <Experience data={this.props.data} />
-                    <Education data={this.props.data} />
-                </div>
+const Preview = props => {
+    return (
+        <div id="preview">
+            <div id="preview-left">
+                <Profile data={props.data} />
+                <Contact data={props.data} />
+                <Skills data={props.data} />
             </div>
-        );
-    }
+            
+            <div id="preview-right">
+                <Details data={props.data} />
+                <Experience data={props.data} />
+                <Education data={props.data} />
+            </div>
+        </div>
+    );
 }
 
 export default Preview;

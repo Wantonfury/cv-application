@@ -1,8 +1,8 @@
 import React from "react";
 import uniqid from "uniqid";
 
-class Experience extends React.Component {
-    renderExperience(exp) {
+const Experience = props => {
+    const renderExperience = (exp) => {
         return (
             <li key={uniqid()} className="preview-wrapper">
                 <span className="preview-dates">
@@ -17,21 +17,19 @@ class Experience extends React.Component {
         );
     }
     
-    render() {
-        const { exp } = this.props.data || new Map();
-        
-        if (!exp) return;
-        return (
-            <div className="preview-category">
-                <h4 className="preview-title">EXPERIENCE</h4>
-                <ul className="preview-list">
-                    {[...exp.values()].map((value) => {
-                        return this.renderExperience(value);
-                    })}
-                </ul>
-            </div>
-        );
-    }
+    const { exp } = props.data || new Map();
+    
+    if (!exp) return;
+    return (
+        <div className="preview-category">
+            <h4 className="preview-title">EXPERIENCE</h4>
+            <ul className="preview-list">
+                {[...exp.values()].map((value) => {
+                    return renderExperience(value);
+                })}
+            </ul>
+        </div>
+    );
 }
 
 export default Experience;
