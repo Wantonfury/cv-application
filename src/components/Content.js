@@ -1,32 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Editor from "./Editor/Editor";
 import Preview from "./Preview/Preview";
 import '../css/Content.css';
 
-class Content extends React.Component {
-    constructor(props) {
-        super(props);
+const Content = props => {
+    const [state, setState] = useState({});
+    
+    const onValueChange = (id, value) => {
+        let newState = {};
+        newState[id] = value;
         
-        this.onValueChange = this.onValueChange.bind(this);
-        
-        this.state = {};
+        setState(newState);
     }
     
-    onValueChange(id, value) {
-        let state = {};
-        state[id] = value;
-        
-        this.setState(state);
-    }
-    
-    render() {
-        return (
-            <div id="content">
-                <Editor onValueChange={this.onValueChange} />
-                <Preview data={this.state} />
-            </div>
-        );
-    }
+    return (
+        <div id="content">
+            <Editor onValueChange={onValueChange} />
+            <Preview data={state} />
+        </div>
+    );
 }
 
 export default Content;
